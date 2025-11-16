@@ -1,13 +1,27 @@
-
 ---
 
 # **Bankruptcy Risk Analyzer**
 
 ### *financial statement analysis & bankruptcy risk prediction*
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![Flask](https://img.shields.io/badge/Flask-App-green.svg)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
+![Model](https://img.shields.io/badge/ML-Bankruptcy%20Prediction-purple.svg)
+
+
 **Bankruptcy Risk Analyzer** is an end-to-end web application that automates financial data extraction, computes key financial indicators, predicts bankruptcy risk using a pretrained machine learning model, and supports day-to-day business decision-making.
 
 ---
+## 🛠️ Built With
+
+- **Python 3.10+**
+- **Flask** (backend web framework)
+- **scikit-learn / XGBoost** (ML model)
+- **Pandas & NumPy** (data processing)
+- **HTML/CSS + Bootstrap** (UI)
+- **OpenPyXL / Pandas ExcelReader** (file extraction)
+
 
 ## **🔍 What This App Does**
 
@@ -96,14 +110,40 @@ The app provides actionable insights that help users with day-to-day financial d
 * Helping financial decision making
 
 ---
+## 🔧 Installation
+
+1. Clone the repository  
+```bash
+git clone https://github.com/your-username/Bankruptcy-Risk-Analyzer.git
+cd Bankruptcy-Risk-Analyzer
+```
+2. Create a virtual environment
+```
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+```
+3. Install dependencies
+```
+pip install -r requirements.txt
+```
+4. Run the Flask app
+```
+python app.py
+```
 
 ## **📁 Repository Structure **
 
 ```
 Bankruptcy-Risk-Analyzer/
-│
+|
+|── Data/
+│   ├── DatasetLink.txt/
+|
+├── Documents/
+|   ├── Project - ML 2.pdf/
+| 
 ├── model/
-│   ├── bankruptcy_model.pkl/          # Extract fields from statements
+│   ├── bankruptcy_model.pkl/        
 │
 ├── services/
 │   ├── BankruptcyFromForm.py
